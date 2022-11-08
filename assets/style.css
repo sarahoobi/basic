@@ -11,10 +11,11 @@ li {
 }
 a {
   text-decoration: none;
+  list-style: none;
   color: #333333;
 }
 /* -------header---------- */
-.header {
+#headerNav {
   background-image: url(./img/banner-bg.svg);
   color: #ffffff;
   background-size: cover;
@@ -23,21 +24,50 @@ a {
   padding: 25px 0px;
   font-size: 14px;
 }
-.header .navbar ul li a,
-.header .dlNow a {
+.sticky {
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+}
+.navbar ul li a,
+.dlNow a {
   color: #ffffff;
 }
-.header .navbar ul li a {
-  padding: 0px 20px;
+
+.navbar ul li a {
+  padding: 0px 18px;
 }
-.header .navbar ul li,
-.header .dlNow {
+.navbar ul li,
+.dlNow {
   padding-top: 8px;
 }
-.header .dlNow a {
+.dlNow a {
   background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
   padding: 12px 20px;
   border-radius: 10px;
+}
+
+/* -------------- menuHam---------- */
+.hidden {
+  display: none;
+}
+.menuLine {
+  width: 40px;
+  height: 2px;
+  background-color: #2e2e2e;
+  margin-top: 8px;
+}
+.menuCross {
+  width: 40px;
+  height: 2px;
+  background-color: #2e2e2e;
+}
+.menuCross:first-child {
+  transform: rotate(45deg);
+}
+.menuCross:last-child {
+  transform: rotate(-45deg);
 }
 /* --------------------titles--------- */
 .titles {
@@ -58,7 +88,99 @@ a {
   padding: 15px 20px;
   border-radius: 10px;
 }
+.headerHero {
+  margin-bottom: 100px;
+}
 .headerHero img {
   margin-top: 50px;
   max-width: 580px;
+}
+/* ----------brand logos-------- */
+.brandLogo {
+  margin-bottom: 100px;
+}
+.brandLogo div img {
+  width: 140px;
+  opacity: 0.5;
+}
+.brandLogo div img:hover {
+  opacity: 1;
+}
+/* box-shadow: 0 5px 30px 0 rgb(167 167 167 / 16%); */
+
+/* --------------- clean design--------- */
+.cleanDesign .line {
+  width: 150px;
+  height: 5px;
+  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  margin: 0 auto;
+}
+.titleDesign h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  padding-top: 30px;
+  color: #2e2e2e;
+}
+.titleDesign h2 span {
+  font-weight: 300;
+}
+/* ---------- clean design boxs-------- */
+.designWrap {
+  border: 2px solid transparent;
+  box-shadow: 0 5px 30px 0 rgb(167 167 167 / 16%);
+  padding: 15px 10px;
+  transition: all 0.5s ease-out 0s;
+  border-radius: 10px;
+}
+.test {
+  padding: 0px 80px;
+}
+.designWrap:hover {
+  border: 2px solid red;
+}
+.designWrap .designWrapImg {
+  position: relative;
+  margin-top: 100px;
+}
+.designWrap .designWrapImg img,
+.designWrap .designWrapImg ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.designWrap .designWrapImg ion-icon {
+  font-size: 30px;
+  color: #ffffff;
+}
+.designWrap:hover .designWrapImg {
+  transform: rotate(25deg);
+}
+
+.designWrap .designWrapContent {
+  margin-top: 200px;
+}
+.designWrap .designWrapContent h3 a,
+.designWrap .designWrapContent a {
+  display: flex;
+  justify-content: center;
+}
+.designWrap .designWrapContent h3 a:hover {
+  color: #0860be;
+}
+
+.designWrap .designWrapContent p {
+  text-align: center;
+  padding: 0px 20px;
+  color: #5d5858;
+  font-size: 15px;
+}
+.designWrap .designWrapContent a ion-icon {
+  padding-left: 5px;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.designWrap .designWrapContent a:hover {
+  color: #0860be;
 }

@@ -12,15 +12,23 @@
     <title>Basic-Saas Landing Page</title>
   </head>
   <body>
-    <section class="header">
-      <div class="container-fluid">
+    <!-- --------header----------- -->
+    <header id="headerNav">
+      <div class="container">
         <div class="row headerNavbar">
-          <div class="logo col-lg-1 offset-lg-1">
-            <a href="#">
-              <img src="./assets/img/logo.svg" alt="" />
+          <div class="logo col-sm-6 col-md-3 col-lg-2">
+            <a
+              href="#"
+              class="row justify-content-start justify-content-lg-end"
+            >
+              <img
+                class="col-sm-5 col-md-9 col-lg-9"
+                src="./assets/img/logo.svg"
+                alt=""
+              />
             </a>
           </div>
-          <div class="navbar col-lg-7">
+          <div class="navbar d-none d-lg-block col-lg-7">
             <ul class="d-flex justify-content-end">
               <li><a href="#">Home</a></li>
               <li><a href="#">Features</a></li>
@@ -30,16 +38,29 @@
               <li><a href="#">Blog</a></li>
             </ul>
           </div>
-          <div class="col-lg-3">
-            <div class="row justify-content-center">
-              <div class="dlNow col-lg-10">
+          <div class="col-lg-3 col-md-5 col-sm-4 d-none d-sm-block">
+            <div class="row justify-content-md-end justify-content-lg-end">
+              <div class="dlNow col-md-7 col-lg-9 col-xl-9">
                 <a href="#"> Download Now </a>
               </div>
             </div>
           </div>
+          <!-- -----menu ham------ -->
+          <div class="d-block menuHam d-lg-none col-2 col-md-2">
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+          </div>
+          <div class="hidden menuHamCross col-2">
+            <div class="menuCross"></div>
+            <div class="menuCross"></div>
+          </div>
         </div>
       </div>
-      <div class="container-fluid">
+    </header>
+    <!-- ---------titles------ -->
+    <section>
+      <div class="container">
         <div class="titles">
           <h3>Basic - SaaS Landing Page</h3>
           <h2>Kickstart Your SaaS or App Site</h2>
@@ -54,18 +75,124 @@
         </div>
       </div>
     </section>
-    <!-- <section>
+    <!-- ----------brand logos--------- -->
+    <section>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-2">
-            <img src="./assets/img/brand-1.png" alt="speckyboy" />
-            <img src="./assets/img/brand-2.png" alt="" />
-            <img src="./assets/img/brand-3.png" alt="" />
-            <img src="./assets/img/brand-4.png" alt="" />
-            <img src="./assets/img/brand-5.png" alt="" />
+        <div class="row brandLogo justify-content-center">
+          <div class="col-12 col-lg-11">
+            <div class="row justify-content-evenly">
+              <img
+                src="./assets/img/brand-1.png"
+                class="mb-3"
+                alt="speckyboy"
+              />
+              <img src="./assets/img/brand-2.png" class="mb-3" alt="" />
+              <img src="./assets/img/brand-3.png" class="mb-3" alt="" />
+              <img src="./assets/img/brand-4.png" class="mb-3" alt="" />
+              <img src="./assets/img/brand-5.png" class="mb-3" alt="" />
+            </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
+    <section>
+      <div class="container">
+        <div class="cleanDesign row">
+          <div class="line"></div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="titleDesign col-md-12 col-lg-10 col-xl-9 col-xxl-8">
+            <h2>
+              Clean and simple design,
+              <span>Comes with everything you need to get started!</span>
+            </h2>
+          </div>
+        </div>
+        <!-- /* ---------- clean design boxs-------- */ -->
+
+        <div class="row justify-content-center test mt-5">
+          <div class="col-lg-4 col-md-10 mb-3">
+            <div class="designWrap">
+              <div class="designWrapImg">
+                <img
+                  class="test"
+                  src="./assets/img/services-shape-1.svg"
+                  alt=""
+                />
+                <img src="./assets/img/services-shape.svg" alt="" />
+                <ion-icon name="water-outline"></ion-icon>
+              </div>
+              <div class="designWrapContent">
+                <h3>
+                  <a href="#">Clean</a>
+                </h3>
+                <p class="mt-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+                  tempore deserunt illum ex quis hic esse ullam?
+                </p>
+                <a href="#" class="mt-4 mb-4"
+                  >Learn More
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-10 mb-3">
+            <div class="designWrap">
+              <div class="designWrapImg">
+                <img src="./assets/img/services-shape-2.svg" alt="" />
+                <img src="./assets/img/services-shape.svg" alt="" />
+                <ion-icon name="settings-outline"></ion-icon>
+              </div>
+              <div class="designWrapContent">
+                <h3>
+                  <a href="#">Robust</a>
+                </h3>
+                <p class="mt-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+                  tempore deserunt illum ex quis hic esse ullam?
+                </p>
+                <a href="#" class="mt-4 mb-4"
+                  >Learn More
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-10 mb-3">
+            <div class="designWrap">
+              <div class="designWrapImg">
+                <img src="./assets/img/services-shape-3.svg" alt="" />
+                <img src="./assets/img/services-shape.svg" alt="" />
+                <ion-icon name="magnet-outline"></ion-icon>
+              </div>
+              <div class="designWrapContent">
+                <h3>
+                  <a href="#">Powerful</a>
+                </h3>
+                <p class="mt-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+                  tempore deserunt illum ex quis hic esse ullam?
+                </p>
+                <a href="#" class="mt-4 mb-4"
+                  >learn More
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./assets/script.js"></script>
   </body>
 </html>
