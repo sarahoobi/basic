@@ -76,6 +76,12 @@ a {
 .titles h2 {
   font-size: 28px;
 }
+.titles h3 {
+  font-weight: 500;
+}
+.titles h2 {
+  font-weight: 700;
+}
 .titles p {
   margin: 40px 0px 60px 0px;
 }
@@ -118,8 +124,9 @@ a {
   padding-top: 30px;
   color: #2e2e2e;
 }
-.titleDesign h2 span {
+.titleDesign {
   font-weight: 300;
+  text-align: center;
 }
 /* ---------- clean design boxs-------- */
 .designWrap {
@@ -129,9 +136,7 @@ a {
   transition: all 0.5s ease-out 0s;
   border-radius: 10px;
 }
-/* .test {
-  padding: 0px 50px;
-} */
+
 .designWrap:hover {
   border: 2px solid red;
 }
@@ -182,18 +187,17 @@ a {
   color: #0860be;
 }
 /* <!-- -------------- detail section---------- --> */
-.line {
-  /* width: 150px; */
+.lineSec {
+  margin-top: 100px;
+  width: 150px;
   height: 5px;
   background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
 }
-.test3 {
-  padding: 0px;
-}
+
 .aboutImg img {
   width: 600px;
   height: 500px;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 .quick h3 {
   font-weight: 700;
@@ -206,4 +210,11 @@ a {
   color: #5d5858;
   /* text-justify: newspaper; */
   line-height: 25px;
+}
+.quick a {
+  display: inline-block;
+  margin: 30px 0px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
 }
