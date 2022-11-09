@@ -12,10 +12,10 @@ li {
 a {
   text-decoration: none;
   list-style: none;
-  color: #333333;
+  color: #ffffff;
 }
 /* -------header---------- */
-#headerNav {
+.headerNav {
   background-image: url(./img/banner-bg.svg);
   color: #ffffff;
   background-size: cover;
@@ -30,21 +30,19 @@ a {
   background-color: #ffffff;
   top: 0;
 }
-.navbar ul li a,
-.dlNow a {
-  color: #ffffff;
-}
 
 .navbar ul li a {
   padding: 0px 18px;
 }
-.navbar ul li,
-.dlNow {
+.navbar ul li {
   padding-top: 8px;
 }
+
 .dlNow a {
+  display: flex;
+  justify-content: center;
   background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-  padding: 12px 20px;
+  padding: 12px 5px;
   border-radius: 10px;
 }
 
@@ -82,8 +80,6 @@ a {
   margin: 40px 0px 60px 0px;
 }
 .titles a {
-  /* margin-top: 30px; */
-  color: #ffffff;
   background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
   padding: 15px 20px;
   border-radius: 10px;
@@ -133,9 +129,9 @@ a {
   transition: all 0.5s ease-out 0s;
   border-radius: 10px;
 }
-.test {
-  padding: 0px 80px;
-}
+/* .test {
+  padding: 0px 50px;
+} */
 .designWrap:hover {
   border: 2px solid red;
 }
@@ -165,6 +161,7 @@ a {
 .designWrap .designWrapContent a {
   display: flex;
   justify-content: center;
+  color: #2e2e2e;
 }
 .designWrap .designWrapContent h3 a:hover {
   color: #0860be;
@@ -183,4 +180,30 @@ a {
 }
 .designWrap .designWrapContent a:hover {
   color: #0860be;
+}
+/* <!-- -------------- detail section---------- --> */
+.line {
+  /* width: 150px; */
+  height: 5px;
+  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+}
+.test3 {
+  padding: 0px;
+}
+.aboutImg img {
+  width: 600px;
+  height: 500px;
+  padding-right: 50px;
+}
+.quick h3 {
+  font-weight: 700;
+  font-size: 34px;
+}
+.quick h3 span {
+  font-weight: 400;
+}
+.quick p {
+  color: #5d5858;
+  /* text-justify: newspaper; */
+  line-height: 25px;
 }
