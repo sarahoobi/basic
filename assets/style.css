@@ -128,12 +128,24 @@ a {
 }
 /* ---------- clean design boxs-------- */
 .designWrap {
+  visibility: visible;
   border: 2px solid transparent;
   box-shadow: 0 5px 30px 0 rgb(167 167 167 / 16%);
   padding: 15px 10px;
   transition: all 0.5s ease-out 0s;
   border-radius: 10px;
-  /* animation: design 1s 1s 2s 1; */
+  animation-name: design;
+  animation-delay: 1s;
+  animation-play-state: running;
+  animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+@keyframes design {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .designWrap:hover {
