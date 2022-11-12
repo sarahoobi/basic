@@ -15,19 +15,22 @@ a {
   color: #ffffff;
 }
 /* -------header---------- */
-
+/* header {
+  position: fixed;
+} */
 .headerNav {
   background-image: url(./img/banner-bg.svg);
   color: #ffffff;
   background-size: cover;
 }
-.headerNavbar {
+nav {
   padding: 25px 0px;
   font-size: 14px;
 }
 
 .navbar ul li a {
   padding: 0px 18px;
+  color: #ffffff;
 }
 .navbar ul li {
   padding-top: 8px;
@@ -40,9 +43,21 @@ a {
   padding: 12px 5px;
   border-radius: 10px;
 }
-.sticky {
+header.sticky {
   background-color: #ffffff;
   position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  padding: 0px 0;
+}
+header.stikcy ul li {
+  color: #2e2e2e;
+}
+
+header.sticky .logo a img {
+  color: #2e2e2e;
 }
 /* -------------- menuHam---------- */
 .hidden {
@@ -128,23 +143,25 @@ a {
 }
 /* ---------- clean design boxs-------- */
 .designWrap {
-  visibility: visible;
+  opacity: 1;
   border: 2px solid transparent;
   box-shadow: 0 5px 30px 0 rgb(167 167 167 / 16%);
   padding: 15px 10px;
   transition: all 0.5s ease-out 0s;
   border-radius: 10px;
-  animation-name: design;
-  animation-delay: 1s;
-  animation-play-state: running;
-  animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  animation-name: test;
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
 }
-@keyframes design {
+@keyframes test {
   0% {
-    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -229,4 +246,20 @@ a {
   border-radius: 10px;
   padding: 10px 20px;
   background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+}
+/* --------------fact------------ */
+
+.fact h3 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+}
+.fact h3 span {
+  font-weight: 700;
+}
+.lineBar {
+  width: 150px;
+  height: 5px;
+  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  margin: 0 auto;
 }
