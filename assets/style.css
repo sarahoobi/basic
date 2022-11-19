@@ -15,9 +15,7 @@ a {
   color: #ffffff;
 }
 /* -------header---------- */
-/* header {
-  position: fixed;
-} */
+
 .headerNav {
   background-image: url(./img/banner-bg.svg);
   color: #ffffff;
@@ -43,6 +41,9 @@ nav {
   padding: 12px 5px;
   border-radius: 10px;
 }
+.logoBlack {
+  display: none;
+}
 header.sticky {
   background-color: #ffffff;
   position: fixed;
@@ -51,14 +52,18 @@ header.sticky {
   left: 0;
   z-index: 9999999;
   padding: 0px 0;
-}
-header.stikcy .navbar ul li a {
   color: #2e2e2e;
 }
-
-header.sticky .logo a img {
-  color: #0000;
+header.sticky .navbar ul li a {
+  color: #2e2e2e;
 }
+header.sticky .logo a .logoBlack {
+  display: block;
+}
+header.sticky .logo a .logoWhite {
+  display: none;
+}
+
 /* -------------- menuHam---------- */
 .hidden {
   display: none;
@@ -308,17 +313,11 @@ header.sticky .logo a img {
   width: 400px;
   height: 350px;
 }
-/* --------------------slider section------- */
-.faqTitle h3,
-.faqTitle p {
-  text-align: center;
-  line-height: 25px;
-}
-.faqTitle h3 {
-  font-size: 34px;
-  font-weight: 700;
-}
-.faqTitle p {
-  font-weight: 300;
-  font-size: 32px;
+/* --------------------footer------- */
+
+footer {
+  width: 100%;
+  background-image: url(./img/footer-bg.svg);
+  background-position: center;
+  background-size: cover;
 }

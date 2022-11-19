@@ -15,7 +15,7 @@ counters.forEach((counter) => {
     const target = +counter.getAttribute("data-target");
     const count = +counter.innerText;
     const inc = target / speed;
-    console.log(inc);
+    // console.log(inc);
     if (count < target) {
       counter.innerText = count + inc;
       setTimeout(updateCount, 1);
