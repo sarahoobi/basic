@@ -27,9 +27,15 @@ nav {
 }
 
 .navbar ul li a {
-  padding: 0px 18px;
+  padding: 0px 20px;
   color: #ffffff;
 }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar ul li a {
+    padding: 0px 12px;
+  }
+}
+
 .navbar ul li {
   padding-top: 8px;
 }
@@ -68,23 +74,49 @@ header.sticky .logo a .logoWhite {
 .hidden {
   display: none;
 }
+@media only screen and (min-width: 992px) {
+  .menuHam {
+    display: none;
+  }
+  .menuHamCross {
+    display: none;
+  }
+  .navbarBurger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .download {
+    display: none;
+  }
+}
+
+/* ---------logo menuHam------- */
+.menuHam {
+  padding-top: 8px;
+}
 .menuLine {
-  width: 40px;
+  width: 30px;
   height: 2px;
-  background-color: #2e2e2e;
-  margin-top: 8px;
+  background-color: #ffffff;
+  margin-top: 5px;
 }
-.menuCross {
-  width: 40px;
-  height: 2px;
-  background-color: #2e2e2e;
+
+.menuHamCross ion-icon {
+  font-size: 45px;
 }
-.menuCross:first-child {
-  transform: rotate(45deg);
+/* -------menuHam Content------ */
+.menuHamContent {
+  background-color: #ffffff;
+  /* width: 50%; */
 }
-.menuCross:last-child {
-  transform: rotate(-45deg);
+.navbarBurger ul li a {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px 0px;
+  color: #2e2e2e;
 }
+
 /* --------------------titles--------- */
 .titles {
   text-align: center;

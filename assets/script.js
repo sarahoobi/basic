@@ -1,27 +1,24 @@
-// let navBar = document.getElementById("navBar");
-// let manu = document.getElementById("manu");
+// menu sticky ------------
 
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
+// ------menu navbar------
+const menuLine = document.querySelector(".menuHam");
+const menuHamCross = document.querySelector(".menuHamCross");
+const navbarBurger = document.querySelector(".navbarBurger");
 
-// ------counter fun fact-----
-const counters = document.querySelectorAll(".counter");
-const speed = 200;
+const openMenu = function () {
+  menuHamCross.classList.remove("hidden");
+  navbarBurger.classList.remove("hidden");
+  menuLine.classList.add("hidden");
+};
+const closeMenu = function () {
+  navbarBurger.classList.add("hidden");
+  menuHamCross.classList.add("hidden");
+  menuLine.classList.remove("hidden");
+};
+menuLine.addEventListener("click", openMenu);
 
-counters.forEach((counter) => {
-  const updateCount = () => {
-    const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
-    const inc = target / speed;
-    // console.log(inc);
-    if (count < target) {
-      counter.innerText = count + inc;
-      setTimeout(updateCount, 1);
-    } else {
-      count.innerText = target;
-    }
-  };
-  updateCount();
-});
+menuHamCross.addEventListener("click", closeMenu);
