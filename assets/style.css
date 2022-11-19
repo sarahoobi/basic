@@ -313,11 +313,117 @@ header.sticky .logo a .logoWhite {
   width: 400px;
   height: 350px;
 }
+/* --------subscribe--------- */
+.subscribeWrap {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px 50px 90px;
+  box-shadow: 0 0 18px 0 rgb(50 77 215 / 14%);
+  margin-top: 150px;
+}
+.subscribeWrap h2 {
+  font-weight: 700;
+}
+.subscribeWrap h2,
+.subscribeWrap h2 span {
+  font-size: 36px;
+}
+
+.subscribeWrap h2 span {
+  font-weight: 400;
+}
+
+.subscribe-form {
+  position: relative;
+}
+
+.subscribe-form input {
+  border: 2px solid #e1e1e1;
+  height: 65px;
+  padding: 0 30px;
+  border-radius: 5px;
+  width: 100%;
+  color: #2e2e2e;
+}
+.main-btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0 25px;
+  font-size: 16px;
+  line-height: 48px;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.4s ease-out 0s;
+  background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
+  background-size: 200%;
+}
+.subscribe-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 65px;
+  line-height: 65px;
+  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background-size: 200%;
+}
 /* --------------------footer------- */
 
 footer {
+  position: relative;
+  background-position: top center;
+  z-index: 5;
+}
+footer::before {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  background-image: url(./img/footer-bg.svg);
-  background-position: center;
+  background: url(./img/footer-bg.svg);
+  background-position: top center;
+  z-index: -1;
   background-size: cover;
+}
+
+.footerWrap {
+  color: #ffffff;
+  padding: 100px 0px;
+}
+.footerTitle {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+/* ------footer logo section------ */
+.logoFooter p {
+  line-height: 24px;
+}
+.logoFooter a ion-icon {
+  font-size: 25px;
+  margin: 30px 0px;
+  padding-right: 20px;
+  transition: linear 1s;
+}
+.logoFooter a ion-icon:hover {
+  color: #fe8464;
+}
+/* ----------footer contact------ */
+.contact ul li:not(.first),
+.linkResources ul li:not(.first) {
+  padding-top: 25px;
+  transition: 1s;
+}
+.linkResources ul li a:not(.footerTitle):hover {
+  color: #fe8464;
 }
