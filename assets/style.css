@@ -20,6 +20,10 @@ a {
   background-image: url(./img/banner-bg.svg);
   color: #ffffff;
   background-size: cover;
+  background-position: bottom center;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
 }
 nav {
   padding: 25px 0px;
@@ -146,6 +150,11 @@ header.sticky .logo a .logoWhite {
 .headerHero img {
   margin-top: 50px;
   max-width: 580px;
+}
+@media only screen and (max-width: 576px) {
+  .headerHero img {
+    width: 350px;
+  }
 }
 /* ----------brand logos-------- */
 .brandLogo {
@@ -458,4 +467,26 @@ footer::before {
 }
 .linkResources ul li a:not(.footerTitle):hover {
   color: #fe8464;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0860be;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#myBtn ion-icon {
+  font-size: 28px;
+}
+
+#myBtn:hover {
+  background-color: #fe8464; /* Add a dark-grey background on hover */
 }
